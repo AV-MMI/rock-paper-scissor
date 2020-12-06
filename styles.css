@@ -12,6 +12,7 @@ a {
 
 li {
 	list-style: none;
+	display: inline;
 }
 
 footer {
@@ -45,6 +46,36 @@ main {
 	font-weight: 700;
 }
 
+.election {
+	margin: 20px;
+}
+
+.btn {
+	background-color: #00221c;
+	color: #e5ddc8;
+	border: none;
+	padding: 20px 50px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.btn:hover {
+	background-color: #334E49;
+	color: #db1f48;
+}
+
+.btn:active {
+	background-color: #32212E;
+	color: #F652A0;
+}
+
+.gm_text {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
+	margin-left: 5px;
+}
+
 /*ID*/
 #title {
 	margin-bottom: 40px;
@@ -69,4 +100,34 @@ main {
 	position: relative;
 	right: 7px;
 	bottom: 28px;
+}
+
+#user_selection {
+	margin-top: 50px;
+    text-align: center;
+}
+
+#game_screen {
+	display: flex;
+	border: 3px solid #FFFFFF;
+	position: relative;
+	left: 30%;
+	width: 575px;
+	height: 100px;
+}
+
+#count {
+	width: 40%;
+	border-right: 3px solid #FFFFFF;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#message {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

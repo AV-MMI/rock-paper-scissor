@@ -10,16 +10,42 @@
 <body>
 	<nav class="bg_SteelGray padding10_Centertxt">
 		<ul>
-			<li>return to <a href="" class="txt_Selected">TOP projects page!</a>
-			</li>
+			<li>return to <a href="" class="txt_Selected">TOP projects page!</a></li>
 		</ul>
 	</nav>
 	<main class="padding10_Centertxt">
 		<h1 id="title">Rock Paper Scissors Project!</h1>
 		<p>This is my version of the Rock Paper Scissors project that appears in <span class="txt_Selected">The Odin Project</span> around the lessons of  <span class="txt_Selected">Web Development 101</span>, later i will do a better version with a good front end!</p>
-		<div id="note">
+
+        <div id="user_selection">
+                <ul>
+                	<li class="election"><button id="rock" class="btn">Rock</button></li>
+                	<li class="election"><button id="paper" class="btn">paper</button></li>
+                	<li class="election"><button id="scissors" class="btn">scissors</button></li>
+                </ul>
+        </div>
+
+        <div id="game_screen">
+        	<div id="count">
+        		<div id="round_div">
+        			<span id="round" class="gm_text">
+        				Round: <span id="countN" class="gm_text">0</span>
+        			</span>
+        		</div>
+        		<div id="computerP_div">
+        			<span id="computerPoints" class="gm_text">Computer Points: </span><span id="computerNumber" class="gm_text">0</span>
+        		</div>
+        		<div id="playerP_div">
+        			<span id="playerPoints" class="gm_text">Player Points: </span><span id="playerNumber" class="gm_text">0</span>
+        		</div>
+        	</div>
+
+        	<div id="message"><span id="display" class="gm_text">Lets play!</span></div>
+        </div>
+
+        <div id="note">
 			<span id="note_label">NOTE</span>
-			<p>Keep in mind that this only work in the <span class="txt_Selected">console</span></p>
+            <p>Keep in mind that this is a <span class="txt_Selected">simple UI</span></p>
 		</div>
 	</main>
 	<footer class="bg_SteelGray padding10_Centertxt"><li>A.V</li></footer>
